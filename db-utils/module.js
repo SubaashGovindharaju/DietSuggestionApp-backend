@@ -78,3 +78,28 @@ const WeightGainSchema = new mongoose.Schema({
   });
 
 export const WeightGain = mongoose.model('DiatForWeightGain',WeightGainSchema);
+
+
+const TamilWeightGainSchema = new mongoose.Schema({
+    day: String,
+    mealTime: String,
+    food: String,
+    calories: Number,
+    protein: String,
+    carbs: String,
+    fat: String,
+  });
+
+export const TamilWeightGain = mongoose.model('TamilDiatForWeightGain',TamilWeightGainSchema);
+
+const TamilWeightLossSchema = new mongoose.Schema({
+    day: String,
+    mealTime: String,
+    food: String,
+    calories: Number,
+    protein: String,
+    carbs: String,
+    fat: String,
+  });
+
+export const TamilWeightLoss = mongoose.model('TamilDiatForWeightLoss',TamilWeightLossSchema);
