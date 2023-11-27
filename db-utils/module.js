@@ -15,6 +15,12 @@ const appUserSchema = new mongoose.Schema({
         type: 'string',
         require: true,
     },
+   
+    Gender: {
+        type: 'string',
+        require: true,
+    },
+   
 
     email: {
         type: 'string',

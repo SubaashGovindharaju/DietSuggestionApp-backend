@@ -12,7 +12,7 @@ DiatRouter.get("/weightloss", async function (req, res) {
     const appUser = await WeightLoss.find();
     if (appUser) {
       res.send(appUser);
-    } else {
+    } else { 
       res.send("error data");
     }
   } catch (err) {
