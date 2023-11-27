@@ -209,6 +209,7 @@ authRouter.post("/profile", async function (req, res) {
         Height: 1,
         Weight: 1,
         Age: 1,
+        Gender:1,
         _id: 0,
       }
     );
